@@ -8,6 +8,9 @@ A tour around Leipzig based on historic photos.
 
 ## Preprocessing
 
+Aquire the metadata files (see: [Coding Da Vinci Website](https://codingdavinci.de/daten)) 
+or use the files provided in this repository.
+
 ### Prepare Stadtarchiv
 
 1. First we need to extract all information from the provived csv file, 
@@ -30,10 +33,20 @@ A tour around Leipzig based on historic photos.
  
  ### Prepare Stadtgeschichtliches Museum
  
- 1. 
+ 1. Run the converter script to convert the xlsx file to individual 
+    JSON files.
+    
+    ```zsh
+    $ python preprocessing/preprocess_stadtgeschichtliches_museum.py
+    ```
+    
+    Download all images files into the *rawdata/stadtgeschichtliches_museum* 
+    directory. The images are provided as *JPEG* (low resolution, ca. 
+    13MB total) and *TIFF* (high resolution, ca. 2.6GB total).
  
  
  # License
  
-Code/Software: GNU General Public License v3
-Media: CC-BY-SA 3.0 Museum für Druckkunst and olf42
+* Code/Software: GNU General Public License v3
+* Metadata: CC0 of Stadtarchiv Leipzig and Stadtgeschichtliches Museum Leipzig
+* Media: CC-BY-SA 3.0 Museum für Druckkunst and olf42

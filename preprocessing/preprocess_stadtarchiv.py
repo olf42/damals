@@ -11,9 +11,9 @@ from os.path import dirname, abspath, join
 
 # CONSTANTS
 BASE_PATH = dirname(abspath(__file__))
-METADATA_FILE = join(BASE_PATH, "..", "rawdata", "stadtarchiv", "StadtAL_CodingDaVinci.csv")
-OUT_PATH = join(BASE_PATH, "..", "rawdata", "stadtarchiv")
-FETCH_URLS_FILE = join(BASE_PATH, "..", "rawdata", "stadtarchiv", "stadtarchiv_urls.txt")
+DATA_PATH = join(BASE_PATH, "..", "rawdata", "stadtarchiv")
+METADATA_FILE = join(DATA_PATH, "StadtAL_CodingDaVinci.csv")
+FETCH_URLS_FILE = join(DATA_PATH, "stadtarchiv_urls.txt")
 
 # We define the header manually because there are strange symbols in the csv file :/
 HEADER = ['Archivsignatur',
@@ -46,7 +46,7 @@ def save_metadata_and_write_urls(fetch_urls_file=FETCH_URLS_FILE):
         fetch_url = metadata[URL_FIELD]
         meta_filename = fetch_url.split('/')[-1].split(".")[0]+".json"
 
-        with open(join(OUT_PATH, meta_filename), "w") as mfile:
+        with open(join(DATA_PATH, meta_filename), "w") as mfile:
             json.dump(metadata, mfile)
 
         fetch_urls.append(fetch_url)
