@@ -17,7 +17,7 @@ or use the files provided in this repository.
    and convert it to a more convenient form (JSON).
    
    ```zsh
-   $ python preprocessing/preprocess_stadtarchiv.py 
+   $ python preprocessing/pp_sa.py 
    ```
    
    Executing this script will create a json file for each photo in the collection,
@@ -37,7 +37,7 @@ or use the files provided in this repository.
     JSON files.
     
     ```zsh
-    $ python preprocessing/preprocess_stadtgeschichtliches_museum.py
+    $ python preprocessing/pp_sgm.py
     ```
     
     Download all images files into the *rawdata/stadtgeschichtliches_museum* 
