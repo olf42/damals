@@ -28,6 +28,7 @@ HEADER = ['Archivsignatur',
           'Lizenz',
           'URL Datensatz',
           'URL Datei']
+URL_FIELD = HEADER[11]
 
 def get_metadata(metadata_file=METADATA_FILE):
     with open(metadata_file) as mfile:
@@ -42,7 +43,7 @@ def save_metadata_and_write_urls(fetch_urls_file=FETCH_URLS_FILE):
     fetch_urls = []
     for metadata in get_metadata():
 
-        fetch_url = metadata["URL Datei"]
+        fetch_url = metadata[URL_FIELD]
         meta_filename = fetch_url.split('/')[-1].split(".")[0]+".json"
 
         with open(join(OUT_PATH, meta_filename), "w") as mfile:
