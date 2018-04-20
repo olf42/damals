@@ -1,6 +1,6 @@
 # damals
 
-![damals logo](assets/damals.svg =250px)
+![damals logo](assets/damals.svg)
 
 A tour around Leipzig based on historic photos.
 
