@@ -1,7 +1,8 @@
 # damals
 
-A tour around
- Leipzig based on historic photos.
+![damals logo](assets/damals.svg =250px)
+
+A tour around Leipzig based on historic photos.
 
 ## Roadmap
 
@@ -33,4 +34,5 @@ A tour around
  
  # License
  
- GNU General Public License v3
+Code/Software: GNU General Public License v3
+Media: CC-BY-SA 3.0 Museum für Druckkunst and olf42
