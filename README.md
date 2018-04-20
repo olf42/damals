@@ -24,7 +24,7 @@ A tour around
    
    ```zsh
    cd rawdata/stadtatchiv
-   for url in `cat stadtarchiv_urls.txt`; do; wget ${url}l done 
+   for url in `cat stadtarchiv_urls.txt`; do; wget ${url}; done 
    ```
  
  ### Prepare Stadtgeschichtliches Museum
