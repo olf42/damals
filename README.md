@@ -14,7 +14,7 @@ A tour around Leipzig based on historic photos.
    and convert it to a more convenient form (JSON).
    
    ```zsh
-   python preprocessing/preprocess_stadtarchiv.py 
+   $ python preprocessing/preprocess_stadtarchiv.py 
    ```
    
    Executing this script will create a json file for each photo in the collection,
@@ -24,12 +24,13 @@ A tour around Leipzig based on historic photos.
    but it's way more convenient to simply use wget and a for loop.
    
    ```zsh
-   cd rawdata/stadtatchiv
-   for url in `cat stadtarchiv_urls.txt`; do; wget ${url}; done 
+   $ cd rawdata/stadtatchiv
+   $ for url in `cat stadtarchiv_urls.txt`; do; wget ${url}; done 
    ```
  
  ### Prepare Stadtgeschichtliches Museum
  
+ 1. 
  
  
  # License
